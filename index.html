@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="pantallaLogin">
+      <form>
+        <h1>LOGIN - TU BANCO</h1>
+        <label for="" id="campoNombre">USUARIO:</label>
+        <input
+          type="text"
+          name="user"
+          id=""
+          required
+          minlength="1"
+          maxlength="16"
+          size="14"
+        />
+        <div></div>
+        <label for="password" id="campoPass">PASSWORD:</label>
+        <input
+          type="password"
+          name="passw"
+          id=""
+          required
+          minlength="1"
+          maxlength="12"
+          size="10"
+        />
+        <div></div>
+        <input
+          class="botonAceptar"
+          type="button"
+          value="LOGIN"
+          onclick="login(this.form)"
+        />
+      </form>
+    </section>
+    <div class="rectangulo">
+      <h1 class="cargando"></h1>
+    </div>
+    <section class="intermitenteRojo"></section>
+    <!-- Leer Javascript -->
+    <script src="main.js"></script>
+    <script>
+      alert("Nombre de usuario demo: Lalo\nPassword: 101010");
+    </script>
+  </body>
+</html>

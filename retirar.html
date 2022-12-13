@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Retirar</title>
+  </head>
+  <body>
+    <section class="pantallaRetirar">
+      <h1 id="retirarSubtitulo">CUENTA DE DÉBITO:</h1>
+      <!-- Aquí empieza el contenido -->
+      <form>
+        <label class="saldoDisponible">DISPONIBLE:</label>
+        <input
+          disabled="disabled"
+          type="number"
+          value=""
+          id="saldoDisponible"
+        />
+        <div></div>
+        <label class="retiro">Total a retirar:</label>
+        <input type="number" value="" id="retiro" />
+        <div></div>
+        <!-- Botón Retirar -->
+        <input
+          class="botonRetirar"
+          type="button"
+          value="Retirar"
+          onclick="retirar();"
+        />
+        <!-- Botón Regresar -->
+        <input
+          class="botonRegresar"
+          type="button"
+          value="Regresar"
+          onclick='location.href="/main.html"'
+          id="botonRegresar"
+        />
+        <input
+          class="botonCerrarSesion"
+          type="button"
+          value="Cerrar Sesión"
+          onclick='location.href="/index.html"'
+          id="botonCerrarSesion"
+        />
+      </form>
+    </section>
+    <div class="rectangulo">
+      <h1 class="cargandoB"></h1>
+      <section class="intermitenteVerde"></section>
+    </div>
+    <!-- Leer Javascript -->
+    <script src="main.js"></script>
+  </body>
+</html>

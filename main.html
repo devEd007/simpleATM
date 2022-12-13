@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Main</title>
+  </head>
+  <body>
+    <section class="pantallaMain">
+      <h1 class="bienvenida">BIENVENIDO USUARIO</h1>
+      <h2>CUENTA DE DÉBITO:</h2>
+      <label class="saldoDisponible">Saldo disponible: </label>
+      <input disabled="" type="number" value="" id="saldoDisponible" />
+      <form>
+        <h3>MOVIMIENTOS:</h3>
+        <input
+          type="button"
+          value="Retirar"
+          id="buttonRetirar"
+          onclick='location.href = "/retirar.html"'
+        />
+        <input
+          type="button"
+          value="Depositar"
+          id="buttonDepositar"
+          onclick='location.href = "/depositar.html"'
+        />
+
+        <input
+          class="botonSalir"
+          type="button"
+          value="Cerrar Sesión"
+          onclick='location.href ="/index.html" '
+        />
+      </form>
+    </section>
+    <div class="rectangulo">
+      <h1 class="cargando"></h1>
+      <section class="intermitenteVerde"></section>
+    </div>
+    <!-- Leer Javascript -->
+    <script src="main.js"></script>
+  </body>
+</html>
